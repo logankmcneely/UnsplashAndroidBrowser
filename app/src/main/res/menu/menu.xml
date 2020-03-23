@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/app_bar_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            app:actionViewClass="android.widget.SearchView"
+            app:showAsAction="ifRoom"
+            android:title="Search"/>
+    <group
+            android:checkableBehavior="single">
+        <item android:title="Landscape"
+              android:id="@+id/mnuLandscape" app:showAsAction="never"/>
+        <item android:title="Portrait"
+              android:id="@+id/mnuPortrait" app:showAsAction="never"/>
+        <item android:title="All"
+              android:id="@+id/mnuAll"
+              android:checked="true"
+              android:actionLayout="@layout/layout_menu_save" app:showAsAction="never"/>
+    </group>
+    <item android:title="Popular Photos" android:id="@+id/mnuPopular" app:showAsAction="never">
+    </item>
+    <item android:title="Latest Photos" android:id="@+id/mnuLatest" app:showAsAction="never"/>
+    <item android:title="Oldest Photos" android:id="@+id/mnuOldest" app:showAsAction="never"/>
+    <item android:title="Random Photos" android:id="@+id/mnuRandom"
+          app:showAsAction="never"/>
+</menu>

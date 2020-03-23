@@ -1,0 +1,2 @@
+rootProject.name='Flickr Image Browser'
+include ':app'
