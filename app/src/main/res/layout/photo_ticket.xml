@@ -13,5 +13,5 @@
         android:background="@color/placeholderBackground"
         android:contentDescription="@string/placeholderDescription"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/placeholder" />
+        android:src="@drawable/placeholder" />
 </LinearLayout>
