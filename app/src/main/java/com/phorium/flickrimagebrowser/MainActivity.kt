@@ -36,12 +36,12 @@ class MainActivity : AppCompatActivity() {
     private var searchParams = SearchParams("random","all",1)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.d(TAG, "onCreate() called")
+//        Log.d(TAG, "onCreate() called")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         updateSearchQuery(searchParams)
 
-        Log.d(TAG, "onCreate() finished")
+//        Log.d(TAG, "onCreate() finished")
     }
 
     override fun onResume() {
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        Log.d(TAG, "onCreateOptionsMenu called")
+//        Log.d(TAG, "onCreateOptionsMenu called")
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu, menu)
 
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
         searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-                Log.d(TAG, ".onQueryTestSubmit: called with querry $query")
+//                Log.d(TAG, ".onQueryTestSubmit: called with querry $query")
 
                 if (query!!.isNotEmpty()) {
                     searchParams.searchQuery = query
