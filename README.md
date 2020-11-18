@@ -3,11 +3,9 @@
 #### Search Photos by Popular, Latest, Oldest, Random or Search by Name
 ![Search Photos by Popular, Latest, or Random](/images/img1.png "Search Photos by Popular, Latest, or Random") ![Search by Name](/images/img2.png "Search Photos by Name")  
 
-#### Immersive Full-Screen Viewing (tap on screen to toggle menu)
-![Immersive Full-Screen Viewing](/images/img3.png "Immersive Full-Screen Viewing")  
+#### Immersive Full-Screen Viewing (tap on screen to toggle menu) and Scroll Through Colors on Photo View
+![Immersive Full-Screen Viewing](/images/img3.png "Immersive Full-Screen Viewing") ![Scroll Through Colors on Photo View](/images/colorscroll.gif "Scroll Through Colors on Photo View")
   
-#### Scroll Through Colors on Photo View
-![Scroll Through Colors on Photo View](/images/colorscroll.gif "Scroll Through Colors on Photo View")
 
 #### Built Using 
   * [Android Studio](https://developer.android.com/studio "Android Studio")  
