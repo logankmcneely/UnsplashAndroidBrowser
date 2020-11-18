@@ -1,6 +1,6 @@
 package com.phorium.flickrimagebrowser
 
-private const val KEY = "14d28c111fc43cb2211b247a8cbbe9e6a0f5a4aa42684fa651be7e29f44d97f3"
+private const val KEY = BuildConfig.API_KEY
 
 class SearchParams(
     searchQuery: String,

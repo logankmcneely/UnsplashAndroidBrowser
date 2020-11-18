@@ -32,7 +32,6 @@ private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
 
-
     private var downloadData: DownloadData? = null
     private var searchParams = SearchParams("random","all",1)
 

@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="60dp" app:cardCornerRadius="6dp" app:cardElevation="12dp">
         <LinearLayout
@@ -16,5 +16,5 @@
                     android:layout_height="40dp" app:srcCompat="@drawable/baseline_navigate_next_black_48dp"
                     android:id="@+id/ivNextSolo"/>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
