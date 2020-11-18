@@ -1,6 +1,6 @@
 ## Unsplash Android Browser App
  
-#### Search Photos by Popular, Latest, or Random or Search by Name
+#### Search Photos by Popular, Latest, Oldest, Random or Search by Name
 ![Search Photos by Popular, Latest, or Random](/images/img1.png "Search Photos by Popular, Latest, or Random") ![Search by Name](/images/img2.png "Search Photos by Name")  
 
 #### Immersive Full-Screen Viewing (tap on screen to toggle menu)
