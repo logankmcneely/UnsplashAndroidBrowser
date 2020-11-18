@@ -7,7 +7,6 @@ import android.content.Intent
 import android.os.AsyncTask
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import android.widget.*
 import com.squareup.picasso.Picasso
@@ -27,21 +26,16 @@ import org.json.JSONArray
 import java.util.*
 import kotlin.collections.ArrayList
 
-private const val TAG = "MainActivity"
-
-
 class MainActivity : AppCompatActivity() {
 
     private var downloadData: DownloadData? = null
     private var searchParams = SearchParams("random","all",1)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-//        Log.d(TAG, "onCreate() called")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         updateSearchQuery(searchParams)
 
-//        Log.d(TAG, "onCreate() finished")
     }
 
     override fun onResume() {
@@ -52,7 +46,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-//        Log.d(TAG, "onCreateOptionsMenu called")
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu, menu)
 
@@ -66,7 +59,6 @@ class MainActivity : AppCompatActivity() {
 
         searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-//                Log.d(TAG, ".onQueryTestSubmit: called with querry $query")
 
                 if (query!!.isNotEmpty()) {
                     searchParams.searchQuery = query
@@ -146,7 +138,6 @@ class MainActivity : AppCompatActivity() {
 
 
         init {
-            Log.d("DownloadData", "DownloadData class initialized")
             propContext = context
             propListView = listView
             propSearchParams = searchParams
@@ -154,7 +145,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun doInBackground(vararg url: String?): String {
-            Log.d("DownloadData", "doInBackground() called")
 
             val result = URL(url[0]).readText()
 
@@ -192,7 +182,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun onPostExecute(result: String?) {
-            Log.d("DownloadData", "onPostExecute() called")
 
             val idParam =
                 when {
@@ -328,7 +317,6 @@ class MainActivity : AppCompatActivity() {
 
 
             DownloadData(propContext,propListView, propSearchParams, propWindow).execute(searchURL)
-            Log.d("TEST", searchURL)
         }
 
         private fun hideSystemUI() {
@@ -379,7 +367,6 @@ class MainActivity : AppCompatActivity() {
 
         downloadData = DownloadData(this, lvPhotos, searchParams, window)
         downloadData?.execute(searchURL)
-        Log.d("TEST", searchURL)
     }
 
 

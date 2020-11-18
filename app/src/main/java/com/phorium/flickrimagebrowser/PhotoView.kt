@@ -11,7 +11,6 @@ import java.lang.Exception
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.*
-import android.util.Log
 import android.view.MotionEvent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GestureDetectorCompat
@@ -161,7 +160,6 @@ class PhotoView : AppCompatActivity(), GestureDetector.OnGestureListener, Gestur
         val red = color.substring(1,3)
         val green = color.substring(3,5)
         val blue = color.substring(5,7)
-        Log.d("TEST", "red:$red, green:$green, blue:$blue")
 
         val redInt = red.toLong(radix = 16)
         val greenInt = green.toLong(radix = 16)
@@ -199,18 +197,11 @@ class PhotoView : AppCompatActivity(), GestureDetector.OnGestureListener, Gestur
 
         colorArray.add("#FFFFFF")
 
-        Log.d("TEST", colorArray.toString())
         return colorArray
 
     }
 
     private fun checkColorPosition(): Boolean {
-//        if (colorArray[colorPosition+1] == "#000000") {
-//            colorPosition += 1
-//        }
-//        if (colorArray[colorPosition-1].toLowerCase() == "#ffffff") {
-//            colorPosition -=1
-//        }
 
         if (colorPosition > COLOR_DIVIDER * 2) {
             colorPosition = COLOR_DIVIDER * 2
@@ -230,34 +221,5 @@ class PhotoView : AppCompatActivity(), GestureDetector.OnGestureListener, Gestur
             color
         }
     }
-
-//    private fun colorWalk(direction: Int) {
-//
-//        Log.d("colorWalk", "colorWalk called")
-//        val stepRatio: Double = 1.67
-//        var stepTime: Long = 15
-//        val startingPosition: Int = colorPosition
-//        var modifier: Int = 1
-//        var status = true
-//        val handler = Handler()
-//
-//        while(status) {
-//            Log.d("colorWalk", "inside Do")
-//
-//            handler.postDelayed({
-//                colorPosition += (direction * modifier)
-//                if(!checkColorPosition()) modifier = -1
-//                if (startingPosition == colorPosition) status = false
-//                Log.d("colorWalk", "inside handler")
-//                linearLayoutPhotoView.setBackgroundColor(Color.parseColor(colorArray[colorPosition]))
-//
-//            }, stepTime)
-//            stepTime *= stepRatio.toLong()
-//
-//            Log.d("colorWalk", "colorPosition: $colorPosition")
-//        }
-//
-//        Log.d("colorWalk", "colorWalk ended")
-//    }
 
 }
