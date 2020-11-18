@@ -1,36 +1,27 @@
 ## Unsplash Android Browser App
+> Requires Android Oreo and higher (API >= 26)
  
+#### Search Photos by Popular, Latest, or Random or Search by Name
+![Search Photos by Popular, Latest, or Random](/images/img1.png "Search Photos by Popular, Latest, or Random") ![Search by Name](/images/img2.png "Search Photos by Name")  
 
-#### Built Using
+#### Immersive Full-Screen Viewing (tap on screen to toggle menu)
+![Immersive Full-Screen Viewing](/images/img3.png "Immersive Full-Screen Viewing")  
+  
+  
 
-  * [React 16](https://reactjs.org/ "ReactJS's Homepage")  
-  * [React Redux 7](https://react-redux.js.org/ "React Redux's Homepage")  
-  * [Unsplash API](https://unsplash.com/developers "Unsplash Developer Page")  
-  * [Styling with Material UI](https://material-ui.com/ "Material UI's Homepage")  
+#### Built Using 
+  * [Android Studio](https://developer.android.com/studio "Android Studio")  
+  * [AndroidX](https://developer.android.com/ "Android Developer's")  
+  * [Kotlin](https://kotlinlang.org/ "Kotlin Programming Language")  
+  * [Picasso's](https://square.github.io/picasso/ "Picasso for Android") image downloading and caching library 
+  * [Unsplash API](https://unsplash.com/developers "Unsplash Developers")  
   
   
 #### Set Up  
 
 Clone repository 
   
-Install dependencies:
-``` 
-npm install
-```  
-  
-Get a free API key from [Unsplash](https://unsplash.com/developers "Unsplash Developer Page")  
-  
-In the root folder of the project create a file named **".env"**. [Learn more](https://create-react-app.dev/docs/adding-custom-environment-variables/ "Adding Custom Enviornment Variables in React")  
-  
-In the newly created **.env** file add the following line replacing \<YOUR API KEY\> with your newly aquired key and save the file.
-```
-REACT_APP_API_KEY=<YOUR API KEY>
-``` 
-  
-Run Server:
-```
-npm run dev
-```
+
   
 
 
