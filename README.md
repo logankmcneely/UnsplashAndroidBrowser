@@ -7,7 +7,7 @@
 ![Immersive Full-Screen Viewing](/images/img3.png "Immersive Full-Screen Viewing")  
   
 #### Scroll on Photoview
-[![Demo CountPages alpha](/images/colorscroll.gif)](/images/colorscroll.gif "Scroll through background colors")
+![Demo CountPages alpha](/images/colorscroll.gif "Scroll through background colors")
 
 #### Built Using 
   * [Android Studio](https://developer.android.com/studio "Android Studio")  
